@@ -1,0 +1,54 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.background {
+  background-image: url("images/image.png");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.centered_block {
+  width: 667px;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  text-align: center;
+}
+
+.centered_block h1 {
+  margin: 0;
+  font-size: 2em;
+}
+
+.centered_block p {
+  margin: 10px 0 0;
+  font-size: 1.2em;
+}
+
+.chat_icon {
+  position: absolute;
+  bottom: 30px;
+  right: 30px;
+  height: 100px;
+}
+
+.centered_block {
+  animation: umpa 2s ease-in-out;
+}
+
+@keyframes umpa {
+  0% {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
